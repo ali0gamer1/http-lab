@@ -1,0 +1,21 @@
+{
+  "name": "http-lab",
+  "version": "1.0.0",
+  "description": "A hands-on learning project: HTTP, basic networking and async programming in TypeScript using only Node's built-in http/net modules.",
+  "type": "module",
+  "engines": { "node": ">=20.3" },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "npm run build && node dist/server.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "raw-server": "tsx src/raw-tcp-server.ts",
+    "raw-client": "tsx src/raw-client.ts",
+    "demo": "tsx src/demo-client.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
